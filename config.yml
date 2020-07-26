@@ -1,0 +1,16 @@
+title: diving-into-rust
+description: This course will dive us into the Rust syntax & conepts.
+template:
+  repo: diving-into-rust-template
+  name: diving-into-rust
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
